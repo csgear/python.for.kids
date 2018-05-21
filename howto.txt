@@ -1,4 +1,4 @@
-setup ssh to connect to github
+setup ssh to connect to github /  which is the easiest way
 
 add the following config to .ssh/config file
 
