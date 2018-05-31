@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 
-tf.logging.set_verbosity(tf.logging.FATAL)
+tf.logging.set_verbosity(tf.logging.INFO)
 
 used_features = ['property_type','room_type','bathrooms','bedrooms','beds','bed_type','accommodates','host_total_listings_count'
                 ,'number_of_reviews','review_scores_value','neighbourhood_cleansed','cleaning_fee','minimum_nights','security_deposit',
@@ -82,7 +82,7 @@ eval_input_fn = tf.estimator.inputs.pandas_input_fn(x=X_test,
 
 
 linear_regressor = tf.estimator.LinearRegressor(feature_columns=linear_features,
-                                                model_dir = ".model")
+                                                model_dir = "/tmp/boston_model")
 
 linear_regressor.train(input_fn = training_input_fn,steps=2000)
 
