@@ -19,6 +19,8 @@ tf.flags.DEFINE_integer('num_epochs', 10, "Number of training epochs")
 
 FLAGS = tf.flags.FLAGS
 
+
+
 # extract data from csv file
 def extract_data(filename):
     data = np.loadtxt(filename, delimiter=',')
