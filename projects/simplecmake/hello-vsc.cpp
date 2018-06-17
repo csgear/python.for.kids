@@ -1,13 +1,15 @@
-#include <boost/lambda/lambda.hpp>
 #include <iostream>
 #include <iterator>
 #include <algorithm>
 
 int main()
 {
-    using namespace boost::lambda;
-    typedef std::istream_iterator<int> in;
+    std::string str = "  hello aran  " ;
 
-    std::for_each(
-        in(std::cin), in(), std::cout << (_1 * 3) << " " );
+    return 0 ;
+}
+
+int first_boost()
+{
+    return 0 ;
 } 
